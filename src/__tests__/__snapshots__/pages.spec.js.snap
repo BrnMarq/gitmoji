@@ -50,15 +50,14 @@ exports[`Pages About should render the page 1`] = `
       This project is Open Source, that means everyone can participate, suggesting, discussing and adding new emojis. Take a look at the
        
       <a
-        href="/#contributing-gitmoji"
+        href="#contributing-gitmoji"
         onClick={[Function]}
         onMouseEnter={[Function]}
         onTouchStart={[Function]}
       >
         contributing section
       </a>
-       
-      and
+       and
        
       <a
         href="https://github.com/carloscuesta/gitmoji/blob/master/.github/CONTRIBUTING.md"
@@ -551,6 +550,7 @@ exports[`Pages Contributors should render the page 1`] = `
       >
         <a
           href="https://github.com/profile"
+          rel="noreferrer"
           target="_blank"
         >
           <img
@@ -3601,6 +3601,47 @@ exports[`Pages Index should render the page 1`] = `
         </div>
       </div>
     </article>
+    <article
+      className="emoji col-xs-12 col-sm-6 col-md-3"
+      style={
+        {
+          "--emojiColor": "#f2ad52",
+        }
+      }
+    >
+      <div
+        className="card "
+      >
+        <header
+          className="cardHeader"
+        >
+          <button
+            className="gitmoji-clipboard-emoji gitmoji"
+            data-clipboard-text="🦺"
+            type="button"
+          >
+            🦺
+          </button>
+        </header>
+        <div
+          className="gitmojiInfo"
+        >
+          <button
+            className="gitmoji-clipboard-code gitmojiCode"
+            data-clipboard-text=":safety_vest:"
+            tabIndex="-1"
+            type="button"
+          >
+            <code>
+              :safety_vest:
+            </code>
+          </button>
+          <p>
+            Add or update code related to validation.
+          </p>
+        </div>
+      </div>
+    </article>
   </div>
 </main>
 `;
@@ -3782,6 +3823,18 @@ exports[`Pages Related tools should render the page 1`] = `
           </b>
         </a>
         : A Firefox addon that adds a predictive gitmoji picker to GitHub commit message inputs.
+      </li>
+      <li>
+        <a
+          href="https://github.com/sercanuste/gitmoji-changelog-action"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          <b>
+            gitmoji-changelog-action
+          </b>
+        </a>
+        : GitHub Action for gitmoji-changelog
       </li>
     </ul>
   </section>
